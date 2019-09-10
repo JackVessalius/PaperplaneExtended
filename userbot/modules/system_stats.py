@@ -133,10 +133,10 @@ async def amireallyalive(alive):
     if not alive.text[0].isalpha() and alive.text[0] not in ("/", "#", "@",
                                                              "!"):
         await alive.edit("`"
-                         "Userbot mulai beraksi bos! \n\n"
-                         f"Telethon version: {version.__version__} \n"
+                         "ボートは安心して働く 😉 \n\n"
+                         f"Telethonバージョン: {version.__version__} \n"
                          f"Python: {python_version()} \n"
-                         f"User: {DEFAULTUSER}"
+                         f"ユーザー: {DEFAULTUSER}"
                          "`")
 
 
