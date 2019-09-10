@@ -57,7 +57,7 @@ async def mention_afk(mention):
             if mention.sender_id not in USERS:
                 if AFKREASON:
                     await mention.reply(
-                        f"Sorry! I am AFK because of `{AFKREASON}`. I'll have a look at this as soon as I come back."
+                        f"Maaf sob 🙏, lagi pindah alam karena `{AFKREASON}`. Saya akan melihat pesan kalian setelah saya kembali 😉."
                     )
                 else:
                     await mention.reply(str(random.choice(AFKSTR)))
@@ -67,7 +67,7 @@ async def mention_afk(mention):
                 if USERS[mention.sender_id] % 2 == 0:
                     if AFKREASON:
                         await mention.reply(
-                            f"Sorry! But I'm still not back yet. Currently busy with `{AFKREASON}`."
+                            f"Maaf, saya masih ada di dunia yang lain, terlalu sibuk dengan `{AFKREASON}`."
                         )
                     else:
                         await mention.reply(str(random.choice(AFKSTR)))
@@ -99,7 +99,7 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
-                        f"Sorry! I am AFK due to `{AFKREASON}`. I'll respond as soon I come back."
+                        f"Maaf sob 🙏, lagi pindah alam karena `{AFKREASON}`. Saya akan lihat pesanmu setelah saya kembali 😉."
                     )
                 else:
                     await sender.reply(str(random.choice(AFKSTR)))
@@ -109,7 +109,7 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % 2 == 0:
                     if AFKREASON:
                         await sender.reply(
-                            f"Sorry! But I'm still not back yet. Currently busy with `{AFKREASON}`."
+                            f"Maaf, saya masih ada di dunia yang lain. Terlalu sibuk dengan `{AFKREASON}`."
                         )
                     else:
                         await sender.reply(str(random.choice(AFKSTR)))
@@ -129,7 +129,7 @@ async def set_afk(afk_e):
         string = str(message[5:])
         global ISAFK
         global AFKREASON
-        await afk_e.edit("Going AFK !!")
+        await afk_e.edit("Pindah alam dulu sob 😉")
         if string != "":
             AFKREASON = string
         if BOTLOG:
@@ -148,7 +148,7 @@ async def type_afk_is_not_true(notafk):
     global AFKREASON
     if ISAFK:
         ISAFK = False
-        await notafk.respond("I'm no longer AFK.")
+        await notafk.respond("Hallo Dunia Telegram, Aku kembali 😎")
         sleep(2)
         if BOTLOG:
             await notafk.client.send_message(
