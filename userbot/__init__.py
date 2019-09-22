@@ -53,7 +53,7 @@ API_KEY = os.environ.get("API_KEY", "1170304")
 API_HASH = os.environ.get("API_HASH", "e21a04000e1477c6015d11a18fdb71a3")
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOKoBu7aeuUGBzFLiv-OV4WU_b149yxTQUkGXq55VNaBGJDX4nxFtPm-00tYUmvIRJV7HxtbKFLoHBVXdKWKCS9m28uRFkf6-GWvOlJGNkigw8sZRrAB3lfyW7fHNgDG0c0PDeTnVi-97mz-G-38frUt_FkqRn2y07US9TTvq_6hdy0VtCX50kmlrzNyvFJbwXhh4wWfXIoZtlEzaiGE2wl0U0gS33FpkgvMBZgdeHRi4VjA86kZwBmAgbjpSY338IP1w8m2jWMCfc1vaE3Yj5PXawxIX3bEfKqS6pNu3hCJhNQ9LCARnbIt480anj5kssHsA7bj4gsruR9mR0Ihh351XkhE=")
+STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOMgBu5uGKHYyi3PmZamqkHRTgU-mOfg0bJ9-H_3FfYgxTw9xJiBmPk946qEHDMFbLEi_bhDRw3D834Tub94y8be5jxS1KzNKsOzwYnrEjQRAe9h-pvmcQlQq0Mq16M2ge8Kg5DvZiLmbCosXBBkPsIBfqx4eCMUDTXaTqxCGAt5UQMBqezTsSr7v7-wXPRIV7sm4ziJyOaPrkqHTbHBdmLP7yLZrntgA49OoEou30o8afAXkkeXy6pyQHxDqNrnEMpKs18bWLVkujziB8B3TOexDufjhafcqEGTvwOXlOTk3YTny6OP9tExJ7spoQZrriV0yNLry98UI22ZjtC9sG3lYj7I=")
 
 # Logging channel/group configuration.
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "0"))
